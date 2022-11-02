@@ -1,7 +1,11 @@
+import React from 'react'
+import { Buttons } from './components'
+import { Counter } from './components'
 function App() {
   return (
     <div>
-      <p>hello world</p>
+      <Counter />
+      <Buttons />
     </div>
   )
 }
