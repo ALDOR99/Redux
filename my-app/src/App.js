@@ -1,12 +1,15 @@
 import React from 'react'
+import { Provider } from 'react-redux'
+import store from './store'
 import { Buttons } from './components'
 import { Counter } from './components'
+
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Counter />
       <Buttons />
-    </div>
+    </Provider>
   )
 }
 
